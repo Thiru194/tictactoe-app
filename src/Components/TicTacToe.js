@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import backgroundImage from '../Assets/bg.jpg'; // Import the image file
+import backgroundImage from '../Assets/bg.jpg'; 
 
 const TicTacToe = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -11,7 +11,7 @@ const TicTacToe = () => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    minHeight: '100vh', // Set minimum height to cover the viewport
+    minHeight: '100vh', 
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -23,30 +23,30 @@ const TicTacToe = () => {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, minmax(80px, 1fr))',
     gridGap: '10px',
-    maxWidth: '400px', // Limit board width for better responsiveness
-    width: '100%', // Ensure board takes full width on smaller screens
+    maxWidth: '400px', 
+    width: '100%', 
   };
 
   const boxStyle = {
     width: '100%',
-    aspectRatio: '1 / 1', // Ensure boxes maintain a square aspect ratio
+    aspectRatio: '1 / 1', 
     border: '2px solid transparent',
     display: 'flex',
-    justifyContent: 'center', // Center horizontally
-    alignItems: 'center', // Center vertically
+    justifyContent: 'center', 
+    alignItems: 'center', 
     fontSize: '36px',
     cursor: 'pointer',
     backgroundColor: '#3a3a3a',
-    color: xIsNext ? '#ff00ff' : '#00ffff', // Neon colors for X and O
+    color: xIsNext ? '#ff00ff' : '#00ffff', 
     borderRadius: '5px',
-    transition: 'background-color 0.3s ease, border 0.3s ease, color 0.3s ease', // Added transition for background-color, border, and color
+    transition: 'background-color 0.3s ease, border 0.3s ease, color 0.3s ease', 
   };
   
   const winnerStyle = {
     fontSize: '24px',
     fontWeight: 'bold',
     marginTop: '20px',
-    color: '#ff00ff', // Neon color for winner text
+    color: '#ff00ff', 
   };
 
   const resetButtonStyle = {
